@@ -1,0 +1,9 @@
+@use "fonts";
+@use "colors";
+@use "defaults";
+@use "templates/components/headings.scss";
+
+html,
+body {
+  height: 100%;
+}

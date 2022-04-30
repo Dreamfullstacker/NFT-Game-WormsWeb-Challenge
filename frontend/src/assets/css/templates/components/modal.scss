@@ -1,0 +1,54 @@
+.modal-wrapper {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
+// customs modals stylings (maybe shouldn't be here)
+.create-account-modal {
+  background: #081d3edf;
+  width: clamp(11rem, 46vw, 70rem);
+  min-height: 300px;
+  padding: 1rem 1rem;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+  border: 3px solid var(--yellowborder);
+  border-radius: 0.5rem;
+  max-width: 440px;
+  & h1 {
+    font-size: 31px;
+  }
+  & button {
+    font-size: 14px;
+    padding: 0.45rem 0.46rem;
+  }
+  & button.close-modal-button {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    background: white;
+    border: 0;
+    padding: 0.01rem;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 18px;
+    font-weight: 800;
+  }
+  & button.create-acc-button {
+    font-size: 16px;
+    margin: 0.25rem 0;
+    padding: 0.45rem 1rem;
+  }
+  & p {
+    font-size: 18px;
+    line-height: 19px;
+    padding: 0 1rem;
+    font-weight: normal;
+  }
+  & legend {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "name": "space",
+  "description": "space worms",
+  "version": "1.0.0",
+  "main": "Routes.js",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.18.1",
+    "crypto": "^1.0.1",
+    "jquery": "^3.6.0",
+    "mini-css-extract-plugin": "2.4.5",
+    "pure-react-carousel": "^1.27.8",
+    "rc-tooltip": "^5.1.1",
+    "react": "^17.0.2",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-date-countdown-timer": "^1.1.0",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.24.0",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "react-visibility-sensor": "^5.1.1",
+    "react-waypoint": "^10.1.0",
+    "sass": "^1.45.0",
+    "serve": "^13.0.2",
+    "stream": "0.0.2",
+    "web-vitals": "^2.1.2",
+    "web3": "^1.2.9",
+    "web3-eth": "^1.7.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.1.11",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0"
+  },
+  "resolutions": {
+    "mini-css-extract-plugin": "2.4.5"
+  }
+}

@@ -1,0 +1,29 @@
+.game-footer {
+  position: absolute;
+  bottom: 0;
+  background: transparent;
+  font-size: 10px;
+  height: 12px;
+  line-height: 0;
+  padding: 0 0.61rem;
+  width: 100%;
+  justify-content: space-between;
+}
+.game-footer-right ul {
+  display: flex;
+  & > li {
+    margin-left: 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .game-footer {
+    font-size: 5px;
+    line-height: 5px;
+  }
+}
+@media (min-width: 500px) {
+  .game-footer {
+    font-size: 8px;
+    line-height: 0px;
+  }
+}

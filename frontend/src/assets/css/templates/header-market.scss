@@ -1,0 +1,126 @@
+// header templates
+.tab-area {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  padding-right: 0.6rem;
+  & > .tab-icons {
+    margin-left: auto;
+    margin-top: 0px;
+    display: flex;
+    gap: 4px;
+    & > .btn-tab {
+      background: var(--brightyellow);
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      padding: 0 0.25rem 0.3rem 0.25rem;
+      & > a {
+        color: black;
+        font-size: 20px;
+        &:hover {
+          text-shadow: none;
+          -webkit-text-fill-color: var(--linkblue);
+        }
+      }
+    }
+  }
+}
+.header {
+  justify-content: space-between;
+  padding: var(--padding);
+}
+
+.header-left {
+  padding-left: 0.6rem;
+}
+.header-right ul li a {
+  font-variant-caps: all-small-caps;
+}
+.overlayDivMenuMobile {
+  display: none;
+}
+li.header-link {
+  margin: auto 10px;
+}
+.overlayDivMenuMobile {
+  overflow-y: scroll;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 9;
+}
+.overlayDivMenuMobile ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.overlayDivMenuMobile.showOverlay {
+  width: 100%;
+  display: block;
+  background: #000000f0;
+  padding-top: 33vh;
+}
+.buttonHamburguerStyles {
+  padding: 0.13rem 0.25rem 0.151rem 0.25rem;
+}
+.img-logo {
+  max-width: 250px;
+  height: auto;
+}
+@media (max-width: 376px) {
+  .img-logo {
+    max-width: 100px !important;
+    padding-top: 0.42rem;
+  }
+}
+@media (max-width: 500px) {
+  .header-right nav ul {
+    flex-direction: column;
+  }
+  .header-right button {
+    order: 2;
+  }
+
+  .header-right button svg {
+    width: 25px;
+  }
+  .header-right nav ul li {
+    margin: 0 0 0.5rem auto !important;
+    order: 1;
+  }
+}
+@media (max-width: 650px) {
+  .img-logo {
+    max-width: 150px;
+    padding-top: 0.42rem;
+  }
+}
+@media (min-width: 1000px) {
+  .header {
+    font-size: 0.75rem;
+  }
+}
+.user-area {
+  & button {
+    background: none;
+    border: 0;
+    margin-right: 0.4rem;
+    margin-top: 0.4rem;
+    cursor: pointer;
+    & img {
+      width: clamp(2.5rem, 5vw, 5rem);
+    }
+  }
+}
+div.header-left.flex-wrapper nav {
+  margin-top: 0.31rem;
+}
+div.header-left.flex-wrapper nav ul li a {
+  margin: 0 1rem;
+  font-size: 22px;
+}

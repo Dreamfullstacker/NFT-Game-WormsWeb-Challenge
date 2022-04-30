@@ -1,0 +1,334 @@
+div.mm-mint {
+  background-image: url(./../../img/19.png), url(./../../img/back-game.png);
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 40%, cover;
+  background-position: bottom, left;
+  border-top: 3px solid #79710b;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 1rem;
+  position: relative;
+  place-items: center;
+}
+
+.mmlogincenterdiv {
+  width: 400px;
+  margin: auto;
+  margin-top: 140px;
+}
+.mmtitle {
+  font-size: 60px;
+  margin: 1rem 0;
+}
+.mmfirstp {
+  font-size: 25px;
+  margin: 20px 0;
+}
+.mmsecondp {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.logo-text {
+  float: left;
+  line-height: 20px;
+  margin-left: 20px;
+  padding: 10px 0;
+}
+.logo-img {
+  float: left;
+}
+.mm-connect {
+  font-size: small;
+}
+.mediadiv {
+  display: table;
+  margin: auto;
+  margin-top: 12vh;
+}
+@media (max-width: 500px) {
+  .mmlogincenterdiv {
+    width: 350px;
+  }
+  .mmtitle {
+    font-size: 35px;
+  }
+  .mmfirstp {
+    font-size: 23px;
+    margin: 20px 0;
+  }
+  .mmsecondp {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 400px) {
+  .mmlogincenterdiv {
+    width: 300px;
+  }
+  .mmtitle {
+    font-size: 32px;
+  }
+  .mmfirstp {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .mmsecondp {
+    font-size: 15px;
+    margin: 20px 0;
+  }
+}
+
+// form
+.buy-egg-form {
+  font-size: 16px;
+  width: 100%;
+
+  & .buy-egg-form-label {
+    background: #04142c;
+    min-height: 50px;
+    justify-content: space-between;
+    padding: 0 0.31rem;
+    align-items: center;
+    border-radius: 0.25rem;
+  }
+  & .buy-egg-form-quantity {
+    align-items: center;
+    margin: 0.31rem 0;
+    & div:nth-child(1) {
+      margin-left: auto;
+      margin-right: 0.31rem;
+    }
+  }
+  & .number-input {
+    width: 70px;
+  }
+  & input {
+    background: #04142c;
+    border: 0;
+    min-height: 50px;
+    border-radius: 0.25rem;
+    position: relative;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 0.35rem;
+    &::placeholder {
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      opacity: 1;
+      line-height: 15px;
+      vertical-align: text-top;
+    }
+  }
+  & .buy-egg-form-terms {
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: right;
+  }
+  & .buy-egg-form-actions {
+    justify-content: space-around;
+  }
+}
+
+.NFT-status-container {
+  display: flex;
+}
+.NFT-status-box {
+  font-size: 18px;
+  text-align: left;
+  border: 3px solid var(--yellow);
+  border-radius: 0.51rem;
+  padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+  margin: 0 0.25rem;
+  & div:nth-child(2) {
+    color: var(--yellow);
+  }
+}
+.NFT-view-container {
+  margin-top: 1rem;
+  position: relative;
+}
+.image-container {
+  border: 3px solid var(--yellow);
+  border-radius: 0.51rem;
+  max-width: 260px;
+  height: 350px;
+  margin: auto;
+  display: grid;
+  place-items: center;
+}
+.NFT-view-info-price {
+  display: grid;
+  place-items: center;
+  background: var(--statusblue);
+  border: 3px solid var(--yellow);
+  margin: 0 auto;
+  margin-top: -2rem;
+  max-width: 200px;
+  border-radius: 0.51rem;
+  font-size: 24px;
+  padding: 0.41rem 0;
+  position: relative;
+  z-in & div:nth-child(2) {
+    color: var(--yellow);
+  }
+}
+.NFT-view-info-stats {
+  display: grid;
+  text-align: left;
+  background: var(--statusblue);
+  border: 3px solid var(--yellow);
+  margin: 0 auto;
+  max-width: 150px;
+  margin-top: -3px;
+  border-bottom-left-radius: 0.51rem;
+  border-bottom-right-radius: 0.51rem;
+  font-size: 12px;
+  padding: 0.11rem 0;
+  & * {
+    margin-left: 0.51rem;
+  }
+}
+.NFT-view-info-price {
+  box-shadow: 0px -2px 10px -2px white;
+}
+.NFT-view-info-stats {
+  box-shadow: 0px 2px 10px -2px white;
+}
+.mint-button {
+  padding: 2px;
+  font-size: 20px;
+}
+// wallet (probably had to moev these to a single file
+div.mm-wallet {
+  background-image: url(./../../img/19.png), url(./../../img/back-game.png);
+  background-repeat: no-repeat, repeat;
+  background-size: 100% 40%, cover;
+  background-position: bottom, left;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+}
+.wallet-layout {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  .value {
+    margin: 0.2rem 0;
+    color: var(--coinvalue);
+    legend {
+      color: var(--bluetitles);
+      font-size: 12px;
+    }
+  }
+  > div:nth-child(2) {
+    margin-top: 0.55rem;
+    margin-right: 0.61rem;
+    font-size: 22px;
+    .h1 {
+      font-size: 34px;
+      border-bottom: 3px solid var(--yellowborder);
+      margin-bottom: 0.51rem;
+    }
+    h7 {
+      color: var(--bluetitles);
+    }
+    .wallet-blue-box {
+      text-align: left;
+      margin: 0.7rem 1rem 0.7rem 0;
+    }
+    .crypto-value {
+      font-size: 40px;
+      margin-top: -5px;
+      legend {
+        margin-top: -10px;
+        font-size: 19px;
+      }
+    }
+    .wallet-blue-box-image {
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      img {
+        max-width: 80px;
+      }
+    }
+  }
+}
+.wallet-blue-box {
+  background: #081e43;
+  width: clamp(260px, 20vw, 70rem);
+  min-height: 200px;
+  padding: 0.61rem;
+  text-align: center;
+  position: relative;
+  border: 3px solid var(--yellowborder);
+  border-radius: 0.5rem;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  .wallet-user-info {
+    margin: auto 0;
+  }
+  .wallet-user-info-menu {
+    > nav > ul {
+      display: flex;
+      flex-direction: column;
+      min-width: 100%;
+      text-align: left;
+      > li {
+        min-width: 100%;
+        border-top: 1px solid #666;
+        > a {
+          width: 100%;
+          display: flex;
+          > span {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  & h1 {
+    font-size: 31px;
+  }
+  & button {
+    font-size: 14px;
+    padding: 0.45rem 0.46rem;
+  }
+  & button.close-modal-button {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    background: white;
+    border: 0;
+    padding: 0.01rem;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 18px;
+    font-weight: 800;
+  }
+  & button.create-acc-button {
+    font-size: 16px;
+    margin: 0.25rem 0;
+    padding: 0.45rem 1rem;
+  }
+  & p {
+    font-size: 18px;
+    line-height: 19px;
+    padding: 0 1rem;
+    font-weight: normal;
+  }
+  & legend {
+    font-size: 16px;
+  }
+}
+.create-account-modal button.create-acc-button {
+  margin: 0.25rem 0 0 auto;
+}
+.mintegg-cancel-button {
+  left: 25px;
+  bottom: 30px;
+}

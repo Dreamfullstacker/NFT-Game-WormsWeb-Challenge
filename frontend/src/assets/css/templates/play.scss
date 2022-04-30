@@ -1,0 +1,177 @@
+.game-window {
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  background: url(./../../img/fondo-internas.png) no-repeat center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+.game-dialog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.game-dialog .social-media-area {
+  margin: 0 auto;
+  & .sm-icon {
+    width: 50px;
+    height: 55px;
+  }
+  & .discord {
+    background: url(./../../img/icono-rojo-off.png) no-repeat center;
+    background-size: cover;
+    &:hover {
+      background: url(./../../img/icono-rojo-on.png) no-repeat center;
+      background-size: cover;
+    }
+  }
+  & .twitter {
+    background: url(./../../img/twitter_rojo_off.png) no-repeat center;
+    background-size: cover;
+    &:hover {
+      background: url(./../../img/twitter_rojo_on.png) no-repeat center;
+      background-size: cover;
+    }
+  }
+  & .telegram {
+    background: url(./../../img/telegram_rojo_off.png) no-repeat center;
+    background-size: cover;
+    &:hover {
+      background: url(./../../img/telegram_rojo_on.png) no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  & ul {
+    display: flex;
+  }
+  & ul li:nth-child(even) {
+    margin: 0 3.5rem;
+  }
+}
+.game-dialog-white-border-box {
+  background: var(--blackbox);
+  border: 10px solid var(--grayborder);
+  border-radius: 0.31rem;
+  min-width: 375px;
+  padding: 0 0.25rem;
+  position: relative;
+}
+.game-dialog-whiter-border-box {
+  background: var(--grayborder);
+  border: 10px solid var(--grayborder);
+  border-radius: 0.31rem;
+  min-width: 375px;
+  position: relative;
+  max-width: 425px;
+}
+.game-dialog-white-border-box h1 {
+  font-size: 25px;
+}
+.game-dialog-white-border-box button {
+  min-width: 100%;
+}
+.game-dialog-white-border-box button img {
+  max-width: 40px;
+}
+.box-top-title-actions {
+  background: var(--grayborder);
+  font-size: 14px;
+  color: black;
+  line-height: 13px;
+  padding-top: 3px;
+  padding-bottom: 10px;
+}
+.box-top-title-actions .flex-wrapper {
+  justify-content: space-between;
+}
+.box-title-desc {
+  text-align: start;
+  padding-top: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+}
+.red-link {
+  color: red;
+}
+.game-dialog-register-form {
+  background: var(--blackbox);
+  border: 10px solid var(--blackbox);
+  border-radius: 0.25rem;
+  font-size: 15px;
+  line-height: 16px;
+  padding: 0.11rem;
+}
+.game-dialog-register-form input {
+  background: var(--labelgray);
+  border: 2px solid var(--labelgray);
+  border-radius: 6px;
+  padding: 0.21rem;
+  padding-bottom: 0.95rem;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 0.21rem;
+  font-family: var(--font);
+  &:nth-child(n + 2) {
+    margin-top: 0.21rem;
+  }
+}
+.game-dialog-register-form .withMetaIcon::placeholder {
+  background: url(./../../img/zorro.png) no-repeat center right;
+  background-size: 43px 43px;
+  background-position-x: 96%;
+}
+.terms-check {
+  display: flex;
+  font-size: 12px;
+  line-height: 13px;
+  margin: 10px 0;
+}
+.terms-check span {
+  padding-top: 1px;
+}
+.terms-check input {
+  max-width: 16px;
+  margin-right: 5px;
+  background-color: black;
+}
+.box-title-terms {
+  margin: auto;
+  font-size: 22px;
+  padding: 0.5rem 0;
+}
+.game-dialog-terms-and-coditions {
+  background: var(--grayborder);
+  border: 10px solid var(--grayborder);
+  border-radius: 0.31rem;
+  min-width: 40vw;
+  position: relative;
+  max-width: 40vw;
+}
+.game-dialog-terms-and-coditions .game-dialog-register-form {
+  max-height: 70vh;
+  height: 70vh;
+}
+.scroll-container-terms {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+  max-height: 68vh;
+}
+.scroll-container-terms > div {
+  width: 100%;
+  padding: 1rem 0;
+  color: red;
+  font-size: 28px;
+  line-height: 0;
+}

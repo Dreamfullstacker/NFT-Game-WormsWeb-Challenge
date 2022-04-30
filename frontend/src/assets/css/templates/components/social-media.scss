@@ -1,0 +1,33 @@
+.sm-icon {
+  display: block;
+  width: 55px;
+  height: 55px;
+}
+.discord {
+  background: url(../../../img/dc_black.png) no-repeat center;
+  background-size: cover;
+  &:hover {
+    background: url(../../../img/icono-rojo-off.png) no-repeat center;
+    background-size: cover;
+  }
+}
+.twitter {
+  background: url(../../../img/tw_black.png) no-repeat center;
+  background-size: cover;
+  margin-bottom: 3px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  &:hover {
+    background: url(../../../img/twitter_rojo_off.png) no-repeat center;
+    background-size: cover;
+  }
+}
+.telegram {
+  background: url(../../../img/telegram_black.png) no-repeat center;
+  background-size: cover;
+  margin-bottom: 3px;
+  &:hover {
+    background: url(../../../img/telegram_rojo_off.png) no-repeat center;
+    background-size: cover;
+  }
+}

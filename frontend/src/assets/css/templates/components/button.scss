@@ -1,0 +1,32 @@
+// button
+.button {
+  padding: 0.4rem 0.4rem;
+  border: 0;
+  background-color: var(--blue);
+  background: var(--linear-gradient-reversed);
+  color: var(--linkblue);
+  border: 3px solid #3d2013;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-variant-caps: all-small-caps;
+  &:hover,
+  &:active {
+    background: var(--linear-gradient);
+    filter: brightness(140%);
+    transform: scale(1.05);
+  }
+}
+.cancel {
+  border: 3px solid black;
+
+  background: var(--linear-gradient-cancel);
+  color: #666;
+  &:hover,
+  &:active {
+    background: var(--linear-gradient-cancel-reversed);
+    filter: brightness(140%);
+  }
+}
